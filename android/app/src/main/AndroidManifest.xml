@@ -25,6 +25,12 @@
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
+    <activity android:name=".WidgetConfigurationActivity"
+          android:exported="true">
+          <intent-filter>
+              <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+          </intent-filter>
+      </activity>
     <service
           android:name="com.reactnativeandroidwidget.RNWidgetCollectionService"
           android:permission="android.permission.BIND_REMOTEVIEWS" />
